@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.ebv_imgs
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+    - mdm_media
+name: modal_img_browser
+label: 'Modal Image Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Choose media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  b41124f0-6cdc-4775-a49a-e225b5b7bb45:
+    settings:
+      view: ebv_imgs
+      view_display: eb_imgs_grid
+      submit_text: 'Use selected'
+      auto_select: false
+    uuid: b41124f0-6cdc-4775-a49a-e225b5b7bb45
+    weight: 1
+    label: Library
+    id: view
+  3262e885-363e-46c8-97b4-2d0255e69ce6:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://media/images'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Use selected'
+    uuid: 3262e885-363e-46c8-97b4-2d0255e69ce6
+    weight: 2
+    label: Upload
+    id: dropzonejs_media_entity_inline_entity_form

@@ -1,0 +1,16 @@
+name: MD Media
+description: MD default media configuration
+package: MD Custom
+dependencies:
+  - media
+  - views
+  - dropzonejs
+  - dropzonejs_eb_widget
+  - entity_browser
+  - entity_browser_enhanced
+  - entity_browser_entity_form
+  - inline_entity_form
+
+type: module
+core: 8.x
+version: VERSION

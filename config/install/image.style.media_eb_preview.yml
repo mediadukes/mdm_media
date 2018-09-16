@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: media_eb_preview
+label: 'Media EB Preview'
+effects:
+  54a3c562-61d8-4910-866c-cbcd73065f6d:
+    uuid: 54a3c562-61d8-4910-866c-cbcd73065f6d
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      upscale: false

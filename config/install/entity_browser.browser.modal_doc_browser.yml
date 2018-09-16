@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+    - views.view.ebv_docs
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+    - mdm_media
+name: modal_doc_browser
+label: 'Modal Document Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Choose media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6906888c-9927-4ad5-8f82-274bd38858e7:
+    settings:
+      view: ebv_docs
+      view_display: eb_docs_table
+      submit_text: 'Use selected'
+      auto_select: false
+    uuid: 6906888c-9927-4ad5-8f82-274bd38858e7
+    weight: 1
+    label: Library
+    id: view
+  866f62ee-67a6-44f5-92e5-f3f4d86d27d2:
+    settings:
+      form_mode: default
+      media_type: file
+      upload_location: 'public://media/files'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Use selected'
+    uuid: 866f62ee-67a6-44f5-92e5-f3f4d86d27d2
+    weight: 2
+    label: Upload
+    id: dropzonejs_media_entity_inline_entity_form

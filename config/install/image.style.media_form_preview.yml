@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: media_form_preview
+label: 'Media Form Preview'
+effects:
+  68d4ede1-3202-452c-9d98-2d362dceb710:
+    uuid: 68d4ede1-3202-452c-9d98-2d362dceb710
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      upscale: false
