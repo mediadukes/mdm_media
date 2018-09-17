@@ -6,7 +6,7 @@ This module installs Drupal core media and adds some useful configurion:
 
 More configuration (like the [entity_embed](https://www.drupal.org/project/entity_embed) module and configuration) will be added later.
 
-##Usage
+## Usage
 
 Just install as any other drupal module using `composer require`.
 
