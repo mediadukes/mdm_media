@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_default
+label: 'Media Default'
+effects:
+  be8d3ea6-ac97-4ad6-87a8-cd766349bdd9:
+    uuid: be8d3ea6-ac97-4ad6-87a8-cd766349bdd9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 600
+      crop_type: focal_point
