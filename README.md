@@ -2,7 +2,9 @@
 
 This module installs Drupal core media and adds some useful configurion:
 
-- An enhanced media library using the [entity_browser](https://www.drupal.org/project/entity_browser) module)
+- An enhanced media library using the [entity_browser](https://www.drupal.org/project/entity_browser) module
+- Better scale & crop results in image styles using the [focal_point](https://www.drupal.org/project/focal_point) module
+- Bulk upload capabilities for the core media types using the [media_bulk_upload](https://www.drupal.org/project/media_bulk_upload) module
 
 More configuration (like the [entity_embed](https://www.drupal.org/project/entity_embed) module and configuration) will be added later.
 
