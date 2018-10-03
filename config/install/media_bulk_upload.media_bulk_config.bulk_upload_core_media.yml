@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bulk_upload_core_media
+label: 'Bulk upload core media'
+media_types:
+  audio: audio
+  file: file
+  image: image
+  video: video
+form_mode: default
