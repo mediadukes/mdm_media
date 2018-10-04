@@ -18,6 +18,7 @@
     }
   ],
   "require": {
+    "cweagans/composer-patches": "^1.6.5",
     "drupal/dropzonejs": "^2.0",
     "drupal/entity_browser": "^2.0",
     "drupal/entity_browser_enhanced": "^1.0",
@@ -25,5 +26,16 @@
     "drupal/inline_entity_form": "^1.0",
     "drupal/media_bulk_upload": "^1.0",
     "bower-asset/dropzone": "^5.5"
+  },
+  "extra": {
+    "patches": {
+      "drupal/media_bulk_upload": {
+        "http://dgo.to/2991604 - Notice when navigating to Bulk upload media page":
+        "https://www.drupal.org/files/issues/2018-08-09/notice_undefined_index%20-2991604-2.patch",
+        "http://dgo.to/2991604 - Invalid default value for the checkboxes":
+        "https://www.drupal.org/files/issues/2018-05-31/media_bulk_upload-invalid_value_checkboxes-2976509-2.patch"
+      }
+    },
+    "enable-patching": true
   }
 }
